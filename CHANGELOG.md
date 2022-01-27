@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/sitkoru/github-deployment-action/compare/v1.2.2...v1.2.3) (2022-01-27)
+
+
+### Bug Fixes
+
+* disable auto_merge ([3201c8c](https://github.com/sitkoru/github-deployment-action/commit/3201c8c867aaa7d9d56ef133f5cd3d8253671a4c))
+
 ## [1.2.2](https://github.com/sitkoru/github-deployment-action/compare/v1.2.1...v1.2.2) (2022-01-27)
 
 
