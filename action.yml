@@ -5,15 +5,19 @@ branding:
   color: "blue"
 
 inputs:
+  action: 
+    description: "Deployment action"
+    required: true
+    default: "create"
   version:
     description: "Service version"
-    required: true
+    required: false
   token:
     description: "Github token"
     required: true
   environment:
     description: "Github environment"
-    required: true
+    required: false
     default: "production"
   ref:
     description: "Github ref"
@@ -29,10 +33,15 @@ runs:
   using: "composite"
   steps:
     - uses: chrnorm/deployment-status@releases/v1
+      if: ${{ inputs.action == 'create' }}
       with:
         description: ${{ inputs.version }}
         token: ${{ inputs.token }}
         environment: ${{ inputs.environment }}
         ref: ${{ inputs.ref }}
-        deployment_id: ${{ inputs.deployment_id }}
+    - uses: chrnorm/deployment-status@releases/v1
+      if: ${{ inputs.action == 'update' }}
+      with:
+        token: ${{ inputs.token }}
         state: ${{ inputs.state }}
+        deployment_id: ${{ inputs.deployment_id }}
