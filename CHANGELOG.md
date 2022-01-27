@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sitkoru/github-deployment-action/compare/v1.2.0...v1.2.1) (2022-01-27)
+
+
+### Bug Fixes
+
+* format commands ([f4a6b61](https://github.com/sitkoru/github-deployment-action/commit/f4a6b610260b5009d0772055b8a599a0ca43d33b))
+
 # [1.2.0](https://github.com/sitkoru/github-deployment-action/compare/v1.1.0...v1.2.0) (2022-01-27)
 
 
