@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/sitkoru/github-deployment-action/compare/v1.2.3...v1.2.4) (2022-01-27)
+
+
+### Bug Fixes
+
+* correct json ([8697046](https://github.com/sitkoru/github-deployment-action/commit/86970461334e4eb17721013f410cb66df1ed1fcb))
+
 ## [1.2.3](https://github.com/sitkoru/github-deployment-action/compare/v1.2.2...v1.2.3) (2022-01-27)
 
 
