@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/sitkoru/github-deployment-action/compare/v1.2.1...v1.2.2) (2022-01-27)
+
+
+### Bug Fixes
+
+* correctly pass version input ([574a260](https://github.com/sitkoru/github-deployment-action/commit/574a260c2c824ef7265a3cedfa3a366e2dca4e34))
+
 ## [1.2.1](https://github.com/sitkoru/github-deployment-action/compare/v1.2.0...v1.2.1) (2022-01-27)
 
 
