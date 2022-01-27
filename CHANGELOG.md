@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sitkoru/github-deployment-action/compare/v1.1.0...v1.2.0) (2022-01-27)
+
+
+### Features
+
+* use curl ([ab29ec3](https://github.com/sitkoru/github-deployment-action/commit/ab29ec359b02f73a457cf1c76b9c52efdb07776f))
+
 # [1.1.0](https://github.com/sitkoru/github-deployment-action/compare/v1.0.0...v1.1.0) (2022-01-27)
 
 
