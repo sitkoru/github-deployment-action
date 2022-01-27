@@ -1,0 +1,38 @@
+name: "sitkoru/github-deployment-action"
+description: "Action to manage GitHub Deployments"
+branding:
+  icon: "package"
+  color: "blue"
+
+inputs:
+  version:
+    description: "Service version"
+    required: true
+  token:
+    description: "Github token"
+    required: true
+  environment:
+    description: "Github environment"
+    required: true
+    default: "production"
+  ref:
+    description: "Github ref"
+    required: false
+  deployment_id:
+    description: "Github deployment id"
+    required: false
+  state:
+    description: "Github deployment state"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - uses: chrnorm/deployment-status@releases/v1
+      with:
+        description: ${{ inputs.version }}
+        token: ${{ inputs.token }}
+        environment: ${{ inputs.environment }}
+        ref: ${{ inputs.ref }}
+        deployment_id: ${{ inputs.deployment_id }}
+        state: ${{ inputs.state }}
